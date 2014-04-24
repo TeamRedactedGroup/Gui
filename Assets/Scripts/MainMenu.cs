@@ -97,10 +97,10 @@ public class MainMenu : MonoBehaviour {
 						;
 				}
 //Radio Buttons for which player goes first
-		GUI.Box (new Rect (Screen.width / 9 +Screen.width / 4.1f, Screen.height / 2.5f, 250, 150), "Which player goes first?");
-		Player1First = GUI.Toggle (new Rect(Screen.width / 9 +Screen.width / 4.1f, Screen.height / 2.3f, 230, 20), Player1First, "Player 1");
-		Player2First = GUI.Toggle (new Rect (Screen.width / 9 +Screen.width / 4.1f, Screen.height / 2.3f+Screen.height / 20, 230, 20), Player2First, "Player 2");
-		Random = GUI.Toggle (new Rect (Screen.width / 9 +Screen.width / 4.1f,Screen.height / 2.3f+Screen.height / 20+Screen.height / 20 , 230, 20), Random, "Random");
+		GUI.Box (new Rect (Screen.width / 9 +Screen.width / 4.1f, Screen.height / 2.5f, Screen.width / 3.6f, Screen.height / 5), "Who goes first?");
+		Player1First = GUI.Toggle (new Rect(Screen.width / 9 +Screen.width / 4.1f, Screen.height / 2.3f, Screen.width / 4.5f, 20), Player1First, "Player 1");
+		Player2First = GUI.Toggle (new Rect (Screen.width / 9 +Screen.width / 4.1f, Screen.height / 2.3f+Screen.height / 20, Screen.width / 4.5f, 20), Player2First, "Player 2");
+		Random = GUI.Toggle (new Rect (Screen.width / 9 +Screen.width / 4.1f,Screen.height / 2.3f+Screen.height / 20+Screen.height / 20 , Screen.width / 4.5f, 20), Random, "Random");
 				if (Player1First == false || Player2First == false || Random == false) {
 						if (Player1First == true) {
 								Player2First = false;
